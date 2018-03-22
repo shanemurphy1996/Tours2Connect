@@ -55,3 +55,83 @@
 [21-Mar-2018 12:37:18 UTC] PHP Fatal error:  Call to undefined function CloseCon() in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/registration.php on line 8
 [21-Mar-2018 12:37:18 UTC] PHP Stack trace:
 [21-Mar-2018 12:37:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/registration.php:0
+[22-Mar-2018 11:49:21 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/classes/login_handler.php on line 18
+[22-Mar-2018 11:49:21 Europe/London] PHP Stack trace:
+[22-Mar-2018 11:49:21 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/classes/register.php:0
+[22-Mar-2018 11:49:21 Europe/London] PHP   2. require() /home/ubuntu/workspace/classes/register.php:4
+[22-Mar-2018 11:49:21 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/classes/login_handler.php:18
+[22-Mar-2018 11:57:31 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/classes/login_handler.php on line 18
+[22-Mar-2018 11:57:31 Europe/London] PHP Stack trace:
+[22-Mar-2018 11:57:31 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/classes/register.php:0
+[22-Mar-2018 11:57:31 Europe/London] PHP   2. require() /home/ubuntu/workspace/classes/register.php:4
+[22-Mar-2018 11:57:31 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/classes/login_handler.php:18
+[22-Mar-2018 12:00:31 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/classes/login_handler.php on line 18
+[22-Mar-2018 12:00:31 Europe/London] PHP Stack trace:
+[22-Mar-2018 12:00:31 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/classes/register.php:0
+[22-Mar-2018 12:00:31 Europe/London] PHP   2. require() /home/ubuntu/workspace/classes/register.php:4
+[22-Mar-2018 12:00:31 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/classes/login_handler.php:18
+[22-Mar-2018 12:06:39 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/classes/login_handler.php on line 18
+[22-Mar-2018 12:06:39 Europe/London] PHP Stack trace:
+[22-Mar-2018 12:06:39 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/classes/register.php:0
+[22-Mar-2018 12:06:39 Europe/London] PHP   2. require() /home/ubuntu/workspace/classes/register.php:4
+[22-Mar-2018 12:06:39 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/classes/login_handler.php:18
+[22-Mar-2018 12:17:20 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/classes/login_handler.php on line 18
+[22-Mar-2018 12:17:20 Europe/London] PHP Stack trace:
+[22-Mar-2018 12:17:20 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/classes/register.php:0
+[22-Mar-2018 12:17:20 Europe/London] PHP   2. require() /home/ubuntu/workspace/classes/register.php:4
+[22-Mar-2018 12:17:20 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/classes/login_handler.php:18
+[22-Mar-2018 12:17:57 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/classes/login_handler.php on line 18
+[22-Mar-2018 12:17:57 Europe/London] PHP Stack trace:
+[22-Mar-2018 12:17:57 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/classes/register.php:0
+[22-Mar-2018 12:17:57 Europe/London] PHP   2. require() /home/ubuntu/workspace/classes/register.php:4
+[22-Mar-2018 12:17:57 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/classes/login_handler.php:18
+[22-Mar-2018 12:20:35 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/classes/login_handler.php on line 18
+[22-Mar-2018 12:20:35 Europe/London] PHP Stack trace:
+[22-Mar-2018 12:20:35 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/classes/register.php:0
+[22-Mar-2018 12:20:35 Europe/London] PHP   2. require() /home/ubuntu/workspace/classes/register.php:4
+[22-Mar-2018 12:20:35 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/classes/login_handler.php:18
+[22-Mar-2018 12:27:02 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/classes/login_handler.php on line 18
+[22-Mar-2018 12:27:02 Europe/London] PHP Stack trace:
+[22-Mar-2018 12:27:02 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/classes/register.php:0
+[22-Mar-2018 12:27:02 Europe/London] PHP   2. require() /home/ubuntu/workspace/classes/register.php:4
+[22-Mar-2018 12:27:02 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/classes/login_handler.php:18
+[22-Mar-2018 12:28:09 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/classes/login_handler.php on line 18
+[22-Mar-2018 12:28:09 Europe/London] PHP Stack trace:
+[22-Mar-2018 12:28:09 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/classes/register.php:0
+[22-Mar-2018 12:28:09 Europe/London] PHP   2. require() /home/ubuntu/workspace/classes/register.php:4
+[22-Mar-2018 12:28:09 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/classes/login_handler.php:18
+[22-Mar-2018 12:29:25 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/classes/login_handler.php on line 18
+[22-Mar-2018 12:29:25 Europe/London] PHP Stack trace:
+[22-Mar-2018 12:29:25 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/classes/register.php:0
+[22-Mar-2018 12:29:25 Europe/London] PHP   2. require() /home/ubuntu/workspace/classes/register.php:4
+[22-Mar-2018 12:29:25 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/classes/login_handler.php:18
+[22-Mar-2018 12:31:48 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/classes/login_handler.php on line 18
+[22-Mar-2018 12:31:48 Europe/London] PHP Stack trace:
+[22-Mar-2018 12:31:48 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/classes/register.php:0
+[22-Mar-2018 12:31:48 Europe/London] PHP   2. require() /home/ubuntu/workspace/classes/register.php:4
+[22-Mar-2018 12:31:48 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/classes/login_handler.php:18
+[22-Mar-2018 12:34:17 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/classes/login_handler.php on line 18
+[22-Mar-2018 12:34:17 Europe/London] PHP Stack trace:
+[22-Mar-2018 12:34:17 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/classes/register.php:0
+[22-Mar-2018 12:34:17 Europe/London] PHP   2. require() /home/ubuntu/workspace/classes/register.php:4
+[22-Mar-2018 12:34:17 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/classes/login_handler.php:18
+[22-Mar-2018 12:39:57 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/classes/login_handler.php on line 18
+[22-Mar-2018 12:39:57 Europe/London] PHP Stack trace:
+[22-Mar-2018 12:39:57 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/classes/register.php:0
+[22-Mar-2018 12:39:57 Europe/London] PHP   2. require() /home/ubuntu/workspace/classes/register.php:4
+[22-Mar-2018 12:39:57 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/classes/login_handler.php:18
+[22-Mar-2018 12:47:04 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/classes/login_handler.php on line 18
+[22-Mar-2018 12:47:04 Europe/London] PHP Stack trace:
+[22-Mar-2018 12:47:04 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/classes/register.php:0
+[22-Mar-2018 12:47:04 Europe/London] PHP   2. require() /home/ubuntu/workspace/classes/register.php:4
+[22-Mar-2018 12:47:04 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/classes/login_handler.php:18
+[22-Mar-2018 13:05:47 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/classes/login_handler.php on line 18
+[22-Mar-2018 13:05:47 Europe/London] PHP Stack trace:
+[22-Mar-2018 13:05:47 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/classes/register.php:0
+[22-Mar-2018 13:05:47 Europe/London] PHP   2. require() /home/ubuntu/workspace/classes/register.php:4
+[22-Mar-2018 13:05:47 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/classes/login_handler.php:18
+[22-Mar-2018 13:21:49 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/classes/login_handler.php on line 18
+[22-Mar-2018 13:21:49 Europe/London] PHP Stack trace:
+[22-Mar-2018 13:21:49 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/classes/register.php:0
+[22-Mar-2018 13:21:49 Europe/London] PHP   2. require() /home/ubuntu/workspace/classes/register.php:4
+[22-Mar-2018 13:21:49 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/classes/login_handler.php:18

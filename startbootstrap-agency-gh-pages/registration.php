@@ -12,39 +12,31 @@ CloseCon($conn);
 <html lang="en">
 <head>
     
+   
+
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
     <title>Tours2Connect</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
-     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-     
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
- <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
     <!-- Custom styles for this template -->
     <link href="css/agency.min.css" rel="stylesheet">
-    
-     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Contact form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="js/agency.min.js"></script>
-
+<!-- INLINE CSS - issues with external CSS -->
     <style type="text/css">
 
-     
-   
     
         body {
     padding-top: 90px;
@@ -147,7 +139,37 @@ CloseCon($conn);
 	border-color: #1CA347;
 }
 
+
+#mainNav {
+  background-color: #212529; }
+  #mainNav .navbar-toggler {
+    font-size: 12px;
+    right: 0;
+    padding: 13px;
+    text-transform: uppercase;
+    color: white;
+    border: 0;
+    background-color: #fed136;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  #mainNav .navbar-brand {
+    color: #fed136;
+    font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive; }
+    #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+      color: #fec503; }
+  #mainNav .navbar-nav .nav-item .nav-link {
+    font-size: 90%;
+    font-weight: 400;
+    padding: 0.75em 0;
+    letter-spacing: 1px;
+    color: white;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+      color: #fed136; }
     </style>
+    
+    
+    
+    
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 </head>
@@ -168,21 +190,31 @@ CloseCon($conn);
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="index.php">Services</a>
             </li>
+            
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="registration.php">Register</a>
+              <a class="nav-link js-scroll-trigger" href="../classes/register.php">Register</a>
             </li>
+            
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="registration.php">Login</a>
+              <a class="nav-link js-scroll-trigger" href="../classes/register.php">Login</a>
             </li>
+            
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="index.php">About</a>
             </li>
+            
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="index.php">Recent Tours</a>
             </li>
             
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+            
+              <!--This is for when the user logs in, name will display - Will give option to log out. Not working just yet -->
+            <li class="nav-item">
+              <p style="color:#33ff33"> <?php echo $_SESSION['username'];?></p>
+              <a href="../index.php">Log Out <?php unset($_SESSION['username']);?></a>
             </li>
           </ul>
         </div>
@@ -272,5 +304,19 @@ CloseCon($conn);
 			</div>
 		</div>
 	</div>
+	 <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/agency.min.js"></script>
+
 	</body>
 	</html>

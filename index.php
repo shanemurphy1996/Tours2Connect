@@ -1,3 +1,16 @@
+
+<?php 
+	session_start();
+		
+	if(!isset($_SESSION))
+	{
+		header('location:index.php');
+		exit;
+	}
+	
+?>
+
+ 
 <!DOCTYPE html>
 <html lang="en">
 
@@ -71,6 +84,12 @@
             
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+            
+            <!--This is for when the user logs in, name will display - Will give option to log out. Not working just yet -->
+            <li class="nav-item">
+              <p style="color:#33ff33"> <?php echo $_SESSION['username'];?></p>
+              <a href="../index.php">Log Out <?php unset($_SESSION['username']);;?></a>
             </li>
             
             

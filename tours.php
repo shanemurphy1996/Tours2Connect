@@ -1,16 +1,26 @@
-<!DOCTYPE html>
-<?php 
-	
-	require_once "connections.php"; 
-	if (isset($_GET['tour'])){
-		$game = $_GET['tour'];	
-	}
-	$sql = "SELECT * FROM tour";
-	$db_connection = db_connect();
-	$result = $db_connection->query($sql);
 
-	$pageNumber= 1;
+<?php
+
+$db_host = 'localhost'; // Server Name
+$db_user = 'x14511863'; // Username
+$db_pass = ''; // Password
+$db_name = 'tours2connect'; // Database Name
+
+$conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
+if (!$conn) {
+	die ('Failed to connect to MySQL: ' . mysqli_connect_error());	
+}
+
+$sql = 'SELECT * 
+		FROM tour';
+		
+$query = mysqli_query($conn, $sql);
+
+if (!$query) {
+	die ('SQL Error: ' . mysqli_error($conn));
+}
 ?>
+
 
 
 <link href="css/tours.css" rel="stylesheet"/>
@@ -60,7 +70,120 @@
     padding-top: 90px;
     background-color:#212F3D;
 }
+
+
+
+
+
+
+
+<!-- table CSS -->
+    
+    
+    	<style type="text/css">
+		body {
+			font-size: 15px;
+			color: #343d44;
+			font-family: "segoe-ui", "open-sans", tahoma, arial;
+			padding: 0;
+			margin: 0;
+		}
+		table {
+			margin: auto;
+			font-family: "Lucida Sans Unicode", "Lucida Grande", "Segoe Ui";
+			font-size: 12px;
+		}
+
+		h1 {
+			margin: 25px auto 0;
+			text-align: center;
+			text-transform: uppercase;
+			font-size: 17px;
+			
+		}
+
+		table td {
+			transition: all .5s;
+		}
+		
+		/* Table */
+		.data-table {
+			border-collapse: collapse;
+			font-size: 14px;
+			min-width: 537px;
+		}
+
+		.data-table th, 
+		.data-table td {
+			border: 1px solid #e1edff;
+			padding: 7px 17px;
+		}
+		.data-table caption {
+			margin: 7px;
+		}
+
+		/* Table Header */
+		.data-table thead th {
+			background-color: #508abb;
+			color: #FFFFFF;
+			border-color: #6ea1cc !important;
+			text-transform: uppercase;
+		}
+
+		/* Table Body */
+		.data-table tbody td {
+			color: #353535;
+		}
+		.data-table tbody td:first-child,
+		.data-table tbody td:nth-child(4),
+		.data-table tbody td:last-child {
+			text-align: right;
+		}
+
+		.data-table tbody tr:nth-child(odd) td {
+			background-color: #f4fbff;
+		}
+		.data-table tbody tr:hover td {
+			background-color: #ffffa2;
+			border-color: #ffff0f;
+		}
+
+		/* Table Footer */
+		.data-table tfoot th {
+			background-color: #e5f5ff;
+			text-align: right;
+		}
+		.data-table tfoot th:first-child {
+			text-align: left;
+		}
+		.data-table tbody td:empty
+		{
+			background-color: #ffcccc;
+		}
+	</style>
+
 </style>
+<script type="text/javascript">
+function idleLogout() {
+    var t;
+    window.onload = resetTimer;
+    window.onmousemove = resetTimer;
+    window.onmousedown = resetTimer; // catches touchscreen presses
+    window.onclick = resetTimer;     // catches touchpad clicks
+    window.onscroll = resetTimer;    // catches scrolling with arrow keys
+    window.onkeypress = resetTimer;
+
+    function logout() {
+        window.location.href = 'register.php';
+    }
+
+    function resetTimer() {
+        clearTimeout(t);
+        t = setTimeout(logout, 50000000);  // time is in milliseconds
+    }
+}
+idleLogout();
+</script> 
   </head>
 <body id="page-top">
 
@@ -77,29 +200,34 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+              <a class="nav-link js-scroll-trigger" href="index.php">Services</a>
             </li>
             
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="registration.php">Register</a>
+              <a class="nav-link js-scroll-trigger" href="../classes/register.php">Register</a>
             </li>
             
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="registration.php">Login</a>
+              <a class="nav-link js-scroll-trigger" href="../classes/register.php">Login</a>
             </li>
             
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+              <a class="nav-link js-scroll-trigger" href="index.php">About</a>
             </li>
             
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#recentTours">Recent Tours</a>
+              <a class="nav-link js-scroll-trigger" href="index.php">Recent Tours</a>
             </li>
             
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
             
+              <!--This is for when the user logs in, name will display - Will give option to log out. Not working just yet -->
+            <li class="nav-item">
+              <p style="color:#33ff33"> <?php echo $_SESSION['username'];?></p>
+              <a href="../index.php">Log Out <?php unset($_SESSION['username']);?></a>
+            </li>
             
             
            
@@ -107,6 +235,8 @@
         </div>
       </div>
     </nav>
+    
+    <!-- THIS IS THE GOOGLE API-->
                        <div id="map"></div>
     <script>
       var map;
@@ -124,33 +254,58 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKzbCUOaHVZQPu4kvEWSdnmsM9je3ywUs&callback=initMap"
     async defer></script>
                
-               
-               
-                    <!-- content section -->
-<section id="content">
-	<!-- container -->
-	<div class="container filtersAndList">
+    
 		<row centered>
 			
-			<?php
-				include 'tours/filter.php';
-            ?>
-			
-			<!-- tour list -->
-			<column class="bothColumns" cols="10">
-				<!--Desktop Version Start-->
-				<div class="tourContainer xs-hidden">			
-					<div class="toursList">
-						<div class="onetour tourListHeader">
-										<row>
-											<column cols="4"><div class="width-12 giveMinWidth">Name</div></column>
-											<column cols="2"><div class="width-12 giveMinWidth">Price</div></column>
-											<column cols="1" class="sm-hidden"><div class="width-12 giveMinWidth">Region</div></column>
-											<column cols="1"><div class="width-12 giveMinWidth">Tour Members</div></column>
-											<column cols="3"><div class="width-12 giveMinWidth">Start date/time</div></column>											
-										</row>						
-						</div>			
-                        <!-- PHP query loops through database and outputs data -->
+		 <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 style="color:#33ff33" class="page-header">Tours4You</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            
+    <!-- enter table from the db -->
+    
+    	<h1 style="color:#33ff33">Keep Track Of up and coming events!</h1>
+	<table class="data-table">
+		
+		<thead>
+			<tr>
+				<th>first_name</th>
+				<th>last_name</th>
+				<th>category</th>
+				<th>tour_name</th>
+				<th>region</th>
+				<th>price</th>
+				
+				
+			</tr>
+		</thead>
+		<tbody>
+		<?php
+
+		while ($row = mysqli_fetch_array($query))
+		{
+
+			echo '<tr>
+					<td>'.$row['first_name'].'</td>
+					<td>'.$row['last_name'].'</td>
+					<td>'.$row['category'].'</td>
+				    <td>'.$row['tour_name'].'</td>
+				    <td>'.$row['region'].'</td>
+				    <td>'.$row['price'].'</td>
+				    
+
+				</tr>';
+
+		}?>
+		</tbody>
+		<tfoot>
+
+		</tfoot>
+	</table>
+
 						<div class="dataFillUp">		
 							
 						</div>
