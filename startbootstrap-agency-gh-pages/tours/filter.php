@@ -14,6 +14,7 @@
 	});
 </script>	
 <!-- filters section -->
+
 <column class="bothColumns" cols="2">
 	<div class="filtersList">
 		<!-- filters header -->

@@ -1,0 +1,460 @@
+[21-Mar-2018 15:00:02 Europe/London] PHP Warning:  mysqli_connect(): (HY000/1049): Unknown database 'tours2connectx2' in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/config.php on line 7
+[21-Mar-2018 15:00:02 Europe/London] PHP Stack trace:
+[21-Mar-2018 15:00:02 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 15:00:02 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:2
+[21-Mar-2018 15:00:02 Europe/London] PHP   3. mysqli_connect() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/config.php:7
+[21-Mar-2018 15:10:02 Europe/London] PHP Warning:  mysqli_connect(): (HY000/1049): Unknown database 'tours2connectx2' in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/config.php on line 7
+[21-Mar-2018 15:10:02 Europe/London] PHP Stack trace:
+[21-Mar-2018 15:10:02 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 15:10:02 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:2
+[21-Mar-2018 15:10:02 Europe/London] PHP   3. mysqli_connect() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/config.php:7
+[21-Mar-2018 15:10:20 Europe/London] PHP Warning:  mysqli_connect(): (HY000/1049): Unknown database 'tours2connectx2' in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/config.php on line 7
+[21-Mar-2018 15:10:20 Europe/London] PHP Stack trace:
+[21-Mar-2018 15:10:20 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 15:10:20 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:2
+[21-Mar-2018 15:10:20 Europe/London] PHP   3. mysqli_connect() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/config.php:7
+[21-Mar-2018 15:11:42 Europe/London] PHP Warning:  mysqli_connect(): (HY000/1049): Unknown database 'tours2connectx2' in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/config.php on line 7
+[21-Mar-2018 15:11:42 Europe/London] PHP Stack trace:
+[21-Mar-2018 15:11:42 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 15:11:42 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:2
+[21-Mar-2018 15:11:42 Europe/London] PHP   3. mysqli_connect() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/config.php:7
+[21-Mar-2018 15:21:26 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/form_handlers/register_handler.php on line 55
+[21-Mar-2018 15:21:26 Europe/London] PHP Stack trace:
+[21-Mar-2018 15:21:26 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 15:21:26 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 15:21:26 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/form_handlers/register_handler.php:55
+[21-Mar-2018 15:21:26 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/form_handlers/register_handler.php on line 105
+[21-Mar-2018 15:21:26 Europe/London] PHP Stack trace:
+[21-Mar-2018 15:21:26 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 15:21:26 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 15:21:26 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/form_handlers/register_handler.php:105
+[21-Mar-2018 15:23:07 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/form_handlers/register_handler.php on line 54
+[21-Mar-2018 15:23:07 Europe/London] PHP Stack trace:
+[21-Mar-2018 15:23:07 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 15:23:07 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 15:23:07 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/form_handlers/register_handler.php:54
+[21-Mar-2018 15:23:07 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/form_handlers/register_handler.php on line 104
+[21-Mar-2018 15:23:07 Europe/London] PHP Stack trace:
+[21-Mar-2018 15:23:07 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 15:23:07 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 15:23:07 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/form_handlers/register_handler.php:104
+[21-Mar-2018 15:24:39 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/form_handlers/register_handler.php on line 54
+[21-Mar-2018 15:24:39 Europe/London] PHP Stack trace:
+[21-Mar-2018 15:24:39 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 15:24:39 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 15:24:39 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/form_handlers/register_handler.php:54
+[21-Mar-2018 15:24:39 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/form_handlers/register_handler.php on line 104
+[21-Mar-2018 15:24:39 Europe/London] PHP Stack trace:
+[21-Mar-2018 15:24:39 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 15:24:39 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 15:24:39 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/form_handlers/register_handler.php:104
+[21-Mar-2018 15:27:42 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/form_handlers/register_handler.php on line 54
+[21-Mar-2018 15:27:42 Europe/London] PHP Stack trace:
+[21-Mar-2018 15:27:42 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 15:27:42 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 15:27:42 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/form_handlers/register_handler.php:54
+[21-Mar-2018 15:27:42 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/form_handlers/register_handler.php on line 104
+[21-Mar-2018 15:27:42 Europe/London] PHP Stack trace:
+[21-Mar-2018 15:27:42 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 15:27:42 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 15:27:42 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/form_handlers/register_handler.php:104
+[21-Mar-2018 15:31:26 Europe/London] PHP Warning:  require(register_handler.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php on line 3
+[21-Mar-2018 15:31:26 Europe/London] PHP Stack trace:
+[21-Mar-2018 15:31:26 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 15:31:26 Europe/London] PHP Fatal error:  require(): Failed opening required 'register_handler.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php on line 3
+[21-Mar-2018 15:31:26 Europe/London] PHP Stack trace:
+[21-Mar-2018 15:31:26 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 15:32:16 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php on line 54
+[21-Mar-2018 15:32:16 Europe/London] PHP Stack trace:
+[21-Mar-2018 15:32:16 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 15:32:16 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 15:32:16 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php:54
+[21-Mar-2018 15:32:51 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php on line 54
+[21-Mar-2018 15:32:51 Europe/London] PHP Stack trace:
+[21-Mar-2018 15:32:51 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 15:32:51 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 15:32:51 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php:54
+[21-Mar-2018 15:32:51 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php on line 104
+[21-Mar-2018 15:32:51 Europe/London] PHP Stack trace:
+[21-Mar-2018 15:32:51 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 15:32:51 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 15:32:51 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php:104
+[21-Mar-2018 15:40:30 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php on line 54
+[21-Mar-2018 15:40:30 Europe/London] PHP Stack trace:
+[21-Mar-2018 15:40:30 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 15:40:30 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 15:40:30 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php:54
+[21-Mar-2018 15:40:30 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php on line 104
+[21-Mar-2018 15:40:30 Europe/London] PHP Stack trace:
+[21-Mar-2018 15:40:30 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 15:40:30 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 15:40:30 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php:104
+[21-Mar-2018 15:44:17 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php on line 54
+[21-Mar-2018 15:44:17 Europe/London] PHP Stack trace:
+[21-Mar-2018 15:44:17 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 15:44:17 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 15:44:17 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php:54
+[21-Mar-2018 15:44:17 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php on line 104
+[21-Mar-2018 15:44:17 Europe/London] PHP Stack trace:
+[21-Mar-2018 15:44:17 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 15:44:17 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 15:44:17 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php:104
+[21-Mar-2018 15:44:50 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/login_handler.php on line 11
+[21-Mar-2018 15:44:50 Europe/London] PHP Stack trace:
+[21-Mar-2018 15:44:50 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 15:44:50 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:4
+[21-Mar-2018 15:44:50 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/login_handler.php:11
+[21-Mar-2018 15:45:14 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/login_handler.php on line 11
+[21-Mar-2018 15:45:14 Europe/London] PHP Stack trace:
+[21-Mar-2018 15:45:14 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 15:45:14 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:4
+[21-Mar-2018 15:45:14 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/login_handler.php:11
+[21-Mar-2018 15:45:33 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/login_handler.php on line 11
+[21-Mar-2018 15:45:33 Europe/London] PHP Stack trace:
+[21-Mar-2018 15:45:33 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 15:45:33 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:4
+[21-Mar-2018 15:45:33 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/login_handler.php:11
+[21-Mar-2018 15:46:54 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php on line 54
+[21-Mar-2018 15:46:54 Europe/London] PHP Stack trace:
+[21-Mar-2018 15:46:54 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 15:46:54 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 15:46:54 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php:54
+[21-Mar-2018 15:46:54 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php on line 104
+[21-Mar-2018 15:46:54 Europe/London] PHP Stack trace:
+[21-Mar-2018 15:46:54 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 15:46:54 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 15:46:54 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php:104
+[21-Mar-2018 15:47:54 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php on line 54
+[21-Mar-2018 15:47:54 Europe/London] PHP Stack trace:
+[21-Mar-2018 15:47:54 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 15:47:54 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 15:47:54 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php:54
+[21-Mar-2018 15:47:54 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php on line 104
+[21-Mar-2018 15:47:54 Europe/London] PHP Stack trace:
+[21-Mar-2018 15:47:54 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 15:47:54 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 15:47:54 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php:104
+[21-Mar-2018 15:52:30 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/login_handler.php on line 11
+[21-Mar-2018 15:52:30 Europe/London] PHP Stack trace:
+[21-Mar-2018 15:52:30 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 15:52:30 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:4
+[21-Mar-2018 15:52:30 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/login_handler.php:11
+[21-Mar-2018 15:53:00 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/login_handler.php on line 11
+[21-Mar-2018 15:53:00 Europe/London] PHP Stack trace:
+[21-Mar-2018 15:53:00 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 15:53:00 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:4
+[21-Mar-2018 15:53:00 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/login_handler.php:11
+[21-Mar-2018 15:53:01 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/login_handler.php on line 11
+[21-Mar-2018 15:53:01 Europe/London] PHP Stack trace:
+[21-Mar-2018 15:53:01 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 15:53:01 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:4
+[21-Mar-2018 15:53:01 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/login_handler.php:11
+[21-Mar-2018 15:53:03 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/login_handler.php on line 11
+[21-Mar-2018 15:53:03 Europe/London] PHP Stack trace:
+[21-Mar-2018 15:53:03 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 15:53:03 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:4
+[21-Mar-2018 15:53:03 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/login_handler.php:11
+[21-Mar-2018 15:59:33 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php on line 54
+[21-Mar-2018 15:59:33 Europe/London] PHP Stack trace:
+[21-Mar-2018 15:59:33 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 15:59:33 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 15:59:33 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php:54
+[21-Mar-2018 15:59:45 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php on line 54
+[21-Mar-2018 15:59:45 Europe/London] PHP Stack trace:
+[21-Mar-2018 15:59:45 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 15:59:45 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 15:59:45 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php:54
+[21-Mar-2018 15:59:45 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php on line 104
+[21-Mar-2018 15:59:45 Europe/London] PHP Stack trace:
+[21-Mar-2018 15:59:45 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 15:59:45 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 15:59:45 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php:104
+[21-Mar-2018 16:03:57 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php on line 54
+[21-Mar-2018 16:03:57 Europe/London] PHP Stack trace:
+[21-Mar-2018 16:03:57 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 16:03:57 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 16:03:57 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php:54
+[21-Mar-2018 16:03:57 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php on line 104
+[21-Mar-2018 16:03:57 Europe/London] PHP Stack trace:
+[21-Mar-2018 16:03:57 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 16:03:57 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 16:03:57 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php:104
+[21-Mar-2018 16:04:10 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/login_handler.php on line 11
+[21-Mar-2018 16:04:10 Europe/London] PHP Stack trace:
+[21-Mar-2018 16:04:10 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 16:04:10 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:4
+[21-Mar-2018 16:04:10 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/login_handler.php:11
+[21-Mar-2018 16:05:15 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/login_handler.php on line 11
+[21-Mar-2018 16:05:15 Europe/London] PHP Stack trace:
+[21-Mar-2018 16:05:15 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 16:05:15 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:4
+[21-Mar-2018 16:05:15 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/login_handler.php:11
+[21-Mar-2018 16:09:28 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php on line 54
+[21-Mar-2018 16:09:28 Europe/London] PHP Stack trace:
+[21-Mar-2018 16:09:28 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 16:09:28 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 16:09:28 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php:54
+[21-Mar-2018 16:11:43 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php on line 54
+[21-Mar-2018 16:11:43 Europe/London] PHP Stack trace:
+[21-Mar-2018 16:11:43 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 16:11:43 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 16:11:43 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php:54
+[21-Mar-2018 16:11:43 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php on line 104
+[21-Mar-2018 16:11:43 Europe/London] PHP Stack trace:
+[21-Mar-2018 16:11:43 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 16:11:43 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 16:11:43 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php:104
+[21-Mar-2018 16:13:38 UTC] PHP Warning:  require(form_handler/config.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php on line 2
+[21-Mar-2018 16:13:38 UTC] PHP Stack trace:
+[21-Mar-2018 16:13:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 16:13:38 UTC] PHP Fatal error:  require(): Failed opening required 'form_handler/config.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php on line 2
+[21-Mar-2018 16:13:38 UTC] PHP Stack trace:
+[21-Mar-2018 16:13:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 16:14:25 UTC] PHP Warning:  require(..form_handlers/config.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php on line 2
+[21-Mar-2018 16:14:25 UTC] PHP Stack trace:
+[21-Mar-2018 16:14:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 16:14:25 UTC] PHP Fatal error:  require(): Failed opening required '..form_handlers/config.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php on line 2
+[21-Mar-2018 16:14:25 UTC] PHP Stack trace:
+[21-Mar-2018 16:14:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 16:14:41 UTC] PHP Warning:  require(..form_handlers/config.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php on line 2
+[21-Mar-2018 16:14:41 UTC] PHP Stack trace:
+[21-Mar-2018 16:14:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 16:14:41 UTC] PHP Fatal error:  require(): Failed opening required '..form_handlers/config.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php on line 2
+[21-Mar-2018 16:14:41 UTC] PHP Stack trace:
+[21-Mar-2018 16:14:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 16:19:08 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/login_handler.php on line 11
+[21-Mar-2018 16:19:08 Europe/London] PHP Stack trace:
+[21-Mar-2018 16:19:08 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 16:19:08 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:4
+[21-Mar-2018 16:19:08 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/login_handler.php:11
+[21-Mar-2018 16:21:41 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php on line 54
+[21-Mar-2018 16:21:41 UTC] PHP Stack trace:
+[21-Mar-2018 16:21:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 16:21:41 UTC] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 16:21:41 UTC] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php:54
+[21-Mar-2018 16:21:41 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php on line 104
+[21-Mar-2018 16:21:41 UTC] PHP Stack trace:
+[21-Mar-2018 16:21:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 16:21:41 UTC] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 16:21:41 UTC] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php:104
+[21-Mar-2018 16:22:01 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/login_handler.php on line 11
+[21-Mar-2018 16:22:01 UTC] PHP Stack trace:
+[21-Mar-2018 16:22:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 16:22:01 UTC] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:4
+[21-Mar-2018 16:22:01 UTC] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/login_handler.php:11
+[21-Mar-2018 16:22:08 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/login_handler.php on line 11
+[21-Mar-2018 16:22:08 UTC] PHP Stack trace:
+[21-Mar-2018 16:22:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 16:22:08 UTC] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:4
+[21-Mar-2018 16:22:08 UTC] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/login_handler.php:11
+[21-Mar-2018 16:22:11 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/login_handler.php on line 11
+[21-Mar-2018 16:22:11 UTC] PHP Stack trace:
+[21-Mar-2018 16:22:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 16:22:11 UTC] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:4
+[21-Mar-2018 16:22:11 UTC] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/login_handler.php:11
+[21-Mar-2018 16:22:41 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php on line 54
+[21-Mar-2018 16:22:41 UTC] PHP Stack trace:
+[21-Mar-2018 16:22:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 16:22:41 UTC] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 16:22:41 UTC] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php:54
+[21-Mar-2018 16:29:22 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php on line 57
+[21-Mar-2018 16:29:22 Europe/London] PHP Stack trace:
+[21-Mar-2018 16:29:22 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 16:29:22 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 16:29:22 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php:57
+[21-Mar-2018 16:29:32 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php on line 57
+[21-Mar-2018 16:29:32 Europe/London] PHP Stack trace:
+[21-Mar-2018 16:29:32 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 16:29:32 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 16:29:32 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php:57
+[21-Mar-2018 16:31:04 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php on line 57
+[21-Mar-2018 16:31:04 Europe/London] PHP Stack trace:
+[21-Mar-2018 16:31:04 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 16:31:04 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 16:31:04 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php:57
+[21-Mar-2018 16:34:40 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php on line 57
+[21-Mar-2018 16:34:40 Europe/London] PHP Stack trace:
+[21-Mar-2018 16:34:40 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 16:34:40 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 16:34:40 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php:57
+[21-Mar-2018 16:34:40 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php on line 107
+[21-Mar-2018 16:34:40 Europe/London] PHP Stack trace:
+[21-Mar-2018 16:34:40 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 16:34:40 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 16:34:40 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php:107
+[21-Mar-2018 16:35:56 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php on line 57
+[21-Mar-2018 16:35:56 Europe/London] PHP Stack trace:
+[21-Mar-2018 16:35:56 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 16:35:56 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 16:35:56 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php:57
+[21-Mar-2018 16:35:56 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php on line 107
+[21-Mar-2018 16:35:56 Europe/London] PHP Stack trace:
+[21-Mar-2018 16:35:56 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 16:35:56 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 16:35:56 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php:107
+[21-Mar-2018 16:36:22 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/login_handler.php on line 11
+[21-Mar-2018 16:36:22 Europe/London] PHP Stack trace:
+[21-Mar-2018 16:36:22 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 16:36:22 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:4
+[21-Mar-2018 16:36:22 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/login_handler.php:11
+[21-Mar-2018 16:36:40 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/login_handler.php on line 11
+[21-Mar-2018 16:36:40 Europe/London] PHP Stack trace:
+[21-Mar-2018 16:36:40 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 16:36:40 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:4
+[21-Mar-2018 16:36:40 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/login_handler.php:11
+[21-Mar-2018 16:36:52 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/login_handler.php on line 11
+[21-Mar-2018 16:36:52 Europe/London] PHP Stack trace:
+[21-Mar-2018 16:36:52 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 16:36:52 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:4
+[21-Mar-2018 16:36:52 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/login_handler.php:11
+[21-Mar-2018 16:38:35 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php on line 57
+[21-Mar-2018 16:38:35 Europe/London] PHP Stack trace:
+[21-Mar-2018 16:38:35 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 16:38:35 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 16:38:35 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php:57
+[21-Mar-2018 16:38:35 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php on line 107
+[21-Mar-2018 16:38:35 Europe/London] PHP Stack trace:
+[21-Mar-2018 16:38:35 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 16:38:35 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 16:38:35 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php:107
+[21-Mar-2018 16:39:42 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php on line 57
+[21-Mar-2018 16:39:42 Europe/London] PHP Stack trace:
+[21-Mar-2018 16:39:42 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 16:39:42 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 16:39:42 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php:57
+[21-Mar-2018 16:39:42 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php on line 107
+[21-Mar-2018 16:39:42 Europe/London] PHP Stack trace:
+[21-Mar-2018 16:39:42 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 16:39:42 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 16:39:42 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php:107
+[21-Mar-2018 16:40:14 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php on line 57
+[21-Mar-2018 16:40:14 Europe/London] PHP Stack trace:
+[21-Mar-2018 16:40:14 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 16:40:14 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 16:40:14 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php:57
+[21-Mar-2018 16:40:14 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php on line 107
+[21-Mar-2018 16:40:14 Europe/London] PHP Stack trace:
+[21-Mar-2018 16:40:14 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 16:40:14 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 16:40:14 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php:107
+[21-Mar-2018 16:40:49 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/login_handler.php on line 11
+[21-Mar-2018 16:40:49 Europe/London] PHP Stack trace:
+[21-Mar-2018 16:40:49 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 16:40:49 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:4
+[21-Mar-2018 16:40:49 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/login_handler.php:11
+[21-Mar-2018 16:41:34 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/login_handler.php on line 11
+[21-Mar-2018 16:41:34 Europe/London] PHP Stack trace:
+[21-Mar-2018 16:41:34 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 16:41:34 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:4
+[21-Mar-2018 16:41:34 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/login_handler.php:11
+[21-Mar-2018 16:42:15 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php on line 57
+[21-Mar-2018 16:42:15 Europe/London] PHP Stack trace:
+[21-Mar-2018 16:42:15 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 16:42:15 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 16:42:15 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php:57
+[21-Mar-2018 16:42:15 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php on line 59
+[21-Mar-2018 16:42:15 Europe/London] PHP Stack trace:
+[21-Mar-2018 16:42:15 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 16:42:15 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 16:42:15 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php:59
+[21-Mar-2018 16:47:50 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php on line 56
+[21-Mar-2018 16:47:50 Europe/London] PHP Stack trace:
+[21-Mar-2018 16:47:50 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 16:47:50 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 16:47:50 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php:56
+[21-Mar-2018 16:47:50 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php on line 106
+[21-Mar-2018 16:47:50 Europe/London] PHP Stack trace:
+[21-Mar-2018 16:47:50 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 16:47:50 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 16:47:50 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php:106
+[21-Mar-2018 16:53:40 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/login_handler.php on line 11
+[21-Mar-2018 16:53:40 Europe/London] PHP Stack trace:
+[21-Mar-2018 16:53:40 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 16:53:40 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:4
+[21-Mar-2018 16:53:40 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/login_handler.php:11
+[21-Mar-2018 16:53:57 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php on line 56
+[21-Mar-2018 16:53:57 Europe/London] PHP Stack trace:
+[21-Mar-2018 16:53:57 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 16:53:57 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 16:53:57 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php:56
+[21-Mar-2018 16:53:57 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php on line 106
+[21-Mar-2018 16:53:57 Europe/London] PHP Stack trace:
+[21-Mar-2018 16:53:57 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 16:53:57 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 16:53:57 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php:106
+[21-Mar-2018 16:59:57 UTC] PHP Warning:  require(classes/config.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php on line 2
+[21-Mar-2018 16:59:57 UTC] PHP Stack trace:
+[21-Mar-2018 16:59:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 16:59:57 UTC] PHP Fatal error:  require(): Failed opening required 'classes/config.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php on line 2
+[21-Mar-2018 16:59:57 UTC] PHP Stack trace:
+[21-Mar-2018 16:59:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 17:02:17 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php on line 56
+[21-Mar-2018 17:02:17 Europe/London] PHP Stack trace:
+[21-Mar-2018 17:02:17 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 17:02:17 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 17:02:17 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php:56
+[21-Mar-2018 17:02:17 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php on line 106
+[21-Mar-2018 17:02:17 Europe/London] PHP Stack trace:
+[21-Mar-2018 17:02:17 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 17:02:17 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 17:02:17 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php:106
+[21-Mar-2018 17:03:52 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php on line 56
+[21-Mar-2018 17:03:52 Europe/London] PHP Stack trace:
+[21-Mar-2018 17:03:52 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 17:03:52 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 17:03:52 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php:56
+[21-Mar-2018 17:03:52 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php on line 106
+[21-Mar-2018 17:03:52 Europe/London] PHP Stack trace:
+[21-Mar-2018 17:03:52 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 17:03:52 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 17:03:52 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php:106
+[21-Mar-2018 17:10:57 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php on line 56
+[21-Mar-2018 17:10:57 Europe/London] PHP Stack trace:
+[21-Mar-2018 17:10:57 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 17:10:57 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 17:10:57 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php:56
+[21-Mar-2018 17:10:57 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php on line 106
+[21-Mar-2018 17:10:57 Europe/London] PHP Stack trace:
+[21-Mar-2018 17:10:57 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 17:10:57 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 17:10:57 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php:106
+[21-Mar-2018 17:17:26 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php on line 56
+[21-Mar-2018 17:17:26 Europe/London] PHP Stack trace:
+[21-Mar-2018 17:17:26 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 17:17:26 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 17:17:26 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php:56
+[21-Mar-2018 17:17:26 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php on line 106
+[21-Mar-2018 17:17:26 Europe/London] PHP Stack trace:
+[21-Mar-2018 17:17:26 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 17:17:26 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 17:17:26 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php:106
+[21-Mar-2018 17:30:45 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php on line 56
+[21-Mar-2018 17:30:45 Europe/London] PHP Stack trace:
+[21-Mar-2018 17:30:45 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 17:30:45 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 17:30:45 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php:56
+[21-Mar-2018 17:30:45 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php on line 106
+[21-Mar-2018 17:30:45 Europe/London] PHP Stack trace:
+[21-Mar-2018 17:30:45 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 17:30:45 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 17:30:45 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php:106
+[21-Mar-2018 17:33:25 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php on line 56
+[21-Mar-2018 17:33:25 Europe/London] PHP Stack trace:
+[21-Mar-2018 17:33:25 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 17:33:25 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 17:33:25 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php:56
+[21-Mar-2018 17:33:25 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php on line 106
+[21-Mar-2018 17:33:25 Europe/London] PHP Stack trace:
+[21-Mar-2018 17:33:25 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 17:33:25 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 17:33:25 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php:106
+[21-Mar-2018 17:33:57 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php on line 56
+[21-Mar-2018 17:33:57 Europe/London] PHP Stack trace:
+[21-Mar-2018 17:33:57 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 17:33:57 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 17:33:57 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php:56
+[21-Mar-2018 17:33:57 Europe/London] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php on line 106
+[21-Mar-2018 17:33:57 Europe/London] PHP Stack trace:
+[21-Mar-2018 17:33:57 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:0
+[21-Mar-2018 17:33:57 Europe/London] PHP   2. require() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register.php:3
+[21-Mar-2018 17:33:57 Europe/London] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/classes/register_handler.php:106

@@ -4,3 +4,54 @@
 [04-Dec-2017 03:31:10 UTC] PHP Fatal error:  require_once(): Failed opening required 'connections.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/tours.php on line 4
 [04-Dec-2017 03:31:10 UTC] PHP Stack trace:
 [04-Dec-2017 03:31:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/tours.php:0
+[21-Mar-2018 12:32:36 UTC] PHP Warning:  include(db_connection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/registration.php on line 2
+[21-Mar-2018 12:32:36 UTC] PHP Stack trace:
+[21-Mar-2018 12:32:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/registration.php:0
+[21-Mar-2018 12:32:36 UTC] PHP Warning:  include(): Failed opening 'db_connection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/registration.php on line 2
+[21-Mar-2018 12:32:36 UTC] PHP Stack trace:
+[21-Mar-2018 12:32:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/registration.php:0
+[21-Mar-2018 12:32:36 UTC] PHP Fatal error:  Call to undefined function OpenCon() in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/registration.php on line 4
+[21-Mar-2018 12:32:36 UTC] PHP Stack trace:
+[21-Mar-2018 12:32:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/registration.php:0
+[21-Mar-2018 12:33:19 UTC] PHP Warning:  include(db_connection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/registration.php on line 2
+[21-Mar-2018 12:33:19 UTC] PHP Stack trace:
+[21-Mar-2018 12:33:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/registration.php:0
+[21-Mar-2018 12:33:19 UTC] PHP Warning:  include(): Failed opening 'db_connection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/registration.php on line 2
+[21-Mar-2018 12:33:19 UTC] PHP Stack trace:
+[21-Mar-2018 12:33:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/registration.php:0
+[21-Mar-2018 12:33:19 UTC] PHP Fatal error:  Call to undefined function OpenCon() in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/registration.php on line 4
+[21-Mar-2018 12:33:19 UTC] PHP Stack trace:
+[21-Mar-2018 12:33:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/registration.php:0
+[21-Mar-2018 12:33:20 UTC] PHP Warning:  include(db_connection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/registration.php on line 2
+[21-Mar-2018 12:33:20 UTC] PHP Stack trace:
+[21-Mar-2018 12:33:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/registration.php:0
+[21-Mar-2018 12:33:20 UTC] PHP Warning:  include(): Failed opening 'db_connection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/registration.php on line 2
+[21-Mar-2018 12:33:20 UTC] PHP Stack trace:
+[21-Mar-2018 12:33:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/registration.php:0
+[21-Mar-2018 12:33:20 UTC] PHP Fatal error:  Call to undefined function OpenCon() in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/registration.php on line 4
+[21-Mar-2018 12:33:20 UTC] PHP Stack trace:
+[21-Mar-2018 12:33:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/registration.php:0
+[21-Mar-2018 12:33:24 UTC] PHP Warning:  include(db_connection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/registration.php on line 2
+[21-Mar-2018 12:33:24 UTC] PHP Stack trace:
+[21-Mar-2018 12:33:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/registration.php:0
+[21-Mar-2018 12:33:24 UTC] PHP Warning:  include(): Failed opening 'db_connection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/registration.php on line 2
+[21-Mar-2018 12:33:24 UTC] PHP Stack trace:
+[21-Mar-2018 12:33:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/registration.php:0
+[21-Mar-2018 12:33:24 UTC] PHP Fatal error:  Call to undefined function OpenCon() in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/registration.php on line 4
+[21-Mar-2018 12:33:24 UTC] PHP Stack trace:
+[21-Mar-2018 12:33:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/registration.php:0
+[21-Mar-2018 12:33:35 UTC] PHP Fatal error:  Call to undefined function OpenCon() in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/registration.php on line 4
+[21-Mar-2018 12:33:35 UTC] PHP Stack trace:
+[21-Mar-2018 12:33:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/registration.php:0
+[21-Mar-2018 12:34:46 UTC] PHP Fatal error:  Call to undefined function OpenCon() in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/registration.php on line 4
+[21-Mar-2018 12:34:46 UTC] PHP Stack trace:
+[21-Mar-2018 12:34:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/registration.php:0
+[21-Mar-2018 12:35:32 UTC] PHP Fatal error:  Call to undefined function CloseCon() in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/registration.php on line 8
+[21-Mar-2018 12:35:32 UTC] PHP Stack trace:
+[21-Mar-2018 12:35:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/registration.php:0
+[21-Mar-2018 12:35:50 UTC] PHP Fatal error:  Call to undefined function CloseDb_connect() in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/registration.php on line 8
+[21-Mar-2018 12:35:50 UTC] PHP Stack trace:
+[21-Mar-2018 12:35:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/registration.php:0
+[21-Mar-2018 12:37:18 UTC] PHP Fatal error:  Call to undefined function CloseCon() in /home/ubuntu/workspace/startbootstrap-agency-gh-pages/registration.php on line 8
+[21-Mar-2018 12:37:18 UTC] PHP Stack trace:
+[21-Mar-2018 12:37:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/startbootstrap-agency-gh-pages/registration.php:0

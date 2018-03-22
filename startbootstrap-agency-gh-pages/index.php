@@ -54,11 +54,11 @@
             </li>
             
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="registration.php">Register</a>
+              <a class="nav-link js-scroll-trigger" href="../classes/register.php">Register</a>
             </li>
             
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="registration.php">Login</a>
+              <a class="nav-link js-scroll-trigger" href="../classes/register.php">Login</a>
             </li>
             
             <li class="nav-item">
@@ -99,7 +99,7 @@
             <div class="container">
               <div class="row">
                 <div class="col-lg-12 text-center">
-                  <h2 class="section-heading text-uppercase">Services</h2>
+                  <h2 style="color:#33ff33" class="section-heading text-uppercase">Services</h2>
                   <h3 class="section-subheading text-muted">This is what we offer, and much much more!</h3>
                 </div>
               </div>
@@ -112,10 +112,11 @@
                     <i class="fa fa-circle fa-stack-2x text-primary"></i>
                     <i class="fa fa-flag fa-stack-1x fa-inverse"></i>
                   </span>
-                  <h4 class="service-heading">Tours</h4>
-                  <p class="text-muted">Once a tour is live, you can join a tour there is a limit per tour. First people who join the tour will be sent more information about the tour.</p>
+                  <h4 style="color:#33ff33" class="service-heading">Tours</h4>
+                  <p style="color:#ffff99">Once a tour is live, you can join a tour there is a limit per tour. First people who join the tour will be sent more information about the tour.</p>
                 </div>
-                
+                 <!--  <p class="text-muted">Once a tour is live, you can join a tour there is a limit per tour.
+        First people who join the tour will be sent more information about the tour.</p> this was their before incase problems occur. -->
                 
                 
                 <div class="col-md-4">
@@ -123,30 +124,33 @@
                     <i class="fa fa-circle fa-stack-2x text-primary"></i>
                     <i class="fa fa-user fa-stack-1x fa-inverse"></i> 
                   </span>
-                  <h4 class="service-heading">Become a tour guide yourself</h4>
-                  <p class="text-muted">Sign up as a tour guide and share your knowledge of Irelands greatest attractions</p>
+                  <h4 style="color:#33ff33" class="service-heading">Become a tour guide yourself</h4>
+                  <p style="color:#ffff99">Sign up as a tour guide and share your knowledge of Irelands greatest attractions</p>
+                  
                 </div>
+      <!--  Sign up as a tour guide and share your knowledge of Irelands greatest attractions</p> this was their before incase problems occur. -->
+            
                 
                 <div class="col-md-4">
                   <span class="fa-stack fa-4x">
                     <i class="fa fa-circle fa-stack-2x text-primary"></i>
                     <i class="fa fa-comments-o fa-stack-1x fa-inverse"></i>
                   </span>
-                  <h4 class="service-heading">Contact</h4>
-                  <p class="text-muted">We offer communication between the Tour Guides and the users looking for more information</p>
+                  <h4 style="color:#33ff33" class="service-heading">Contact</h4>
+                  <p style="color:#ffff99"> We offer communication between the Tour Guides and the users looking for more information</p>
                 </div>
-              </div>
+              </div>  <!-- We offer communication between the Tour Guides and the users looking for more information</p> this was their before incase problems occur. -->
             </div>
             
             
             <div class="container align-centered aims">
       			 <h2  style="color:#33ff33">Our Aims</h2>
       			<hr class="divider">
-      			<p style="color:#80d4ff">We aim to bring a completely genuine approach to tours, by giving locals the oppurtunity 
+      			<p style="color:#ffff99">We aim to bring a completely genuine approach to tours, by giving locals the oppurtunity 
       			    to give a tour of their area of living. This could be a historic or architectural tour.
                   It also gives tourists the opportunity to visit rural areas.<br/></p>
       			
-      			<p style="color:#80d4ff">
+      			<p style="color:#ffff99">
       				<b>-</b> A competitive community environment.</br>
       				<b>-</b> Full tourt control for tourists and companies.</br>
       				<b>-</b> Quick and reliable payouts.
@@ -159,13 +163,13 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Recent Tours</h2>
+            <h2 style="color:#33ff33" class="section-heading text-uppercase">Recent Tours</h2>
             <h3 class="section-subheading text-muted">Great experiences below</h3>
           </div>
         </div>
         <div class="row">
           <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+         <!--   <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">  This creates a pop up of item--> 
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
@@ -179,7 +183,7 @@
             </div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+         <!--   <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2"> -->
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
@@ -193,7 +197,7 @@
             </div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+         <!--   <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3"> -->
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
@@ -207,7 +211,7 @@
             </div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+          <!--  <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4"> -->
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
@@ -221,7 +225,7 @@
             </div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+      <!--      <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5-->
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
@@ -235,7 +239,7 @@
             </div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+        <!--    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6"> -->
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
@@ -257,8 +261,8 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">About</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <h2 style="color:#33ff33" class="section-heading text-uppercase">About</h2>
+            <h3 class="section-subheading text-muted">Tours2Connect</h3>
           </div>
         </div>
         <div class="row">
@@ -270,8 +274,8 @@
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                    <h4>August 2017</h4>
-                    <h4 class="subheading">Our Humble Beginnings</h4>
+                    <h4 style="color:#33ff33"> August 2017</h4>
+                    <h4 style="color:#33ff33" class="subheading">Our Humble Beginnings</h4>
                   </div>
                   <div class="timeline-body">
                     <p class="text-muted">Idea was created to begin a new adventure</p>
@@ -284,8 +288,8 @@
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                    <h4>October 2017</h4>
-                    <h4 class="subheading">Tours2Connect was born</h4>
+                    <h4 style="color:#33ff33">October 2017</h4>
+                    <h4 style="color:#33ff33" class="subheading">Tours2Connect was born</h4>
                   </div>
                   <div class="timeline-body">
                     <p class="text-muted">Idea was accepted and The Journey to success was born!</p>
@@ -298,8 +302,8 @@
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                    <h4>November 2017</h4>
-                    <h4 class="subheading">Transition from idea to reality</h4>
+                    <h4 style="color:#33ff33"> November 2017</h4>
+                    <h4 style="color:#33ff33" class="subheading">Transition from idea to reality</h4>
                   </div>
                   <div class="timeline-body">
                     <p class="text-muted">Development of a secure web application begun</p>
@@ -312,8 +316,8 @@
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                    <h4>December 2017</h4>
-                    <h4 class="subheading">Prototype was developed</h4>
+                    <h4 style="color:#33ff33">December 2017</h4>
+                    <h4 style="color:#33ff33" class="subheading">Prototype was developed</h4>
                   </div>
                   <div class="timeline-body">
                     <p class="text-muted">A rough prototype was created</p>
@@ -336,7 +340,7 @@
     
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
-            <h2> <a href="registration.php">Register</a> with us for amazing tour opportunities!</h2>
+            <h2> <a href="register.php">Register</a> with us for amazing tour opportunities!</h2>
           </div>
         </div>
       </div>
@@ -394,7 +398,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <h3 style="color:#33ff33"> <span class="copyright">Copyright &copy; Tours2Connect 2017</span> </h3>
+            <h3 style="color:#33ff33"> <span class="copyright">Copyright &copy; Tours2Connect 2018</span> </h3>
           </div>
           <div class="col-md-4">
             <ul class="list-inline social-buttons">
