@@ -1,8 +1,12 @@
+<?php
 
+include("auth.php");
+
+?>
 <?php
 
 $db_host = 'localhost'; // Server Name
-$db_user = 'x14511863'; // Username
+$db_user = 'root'; // Username
 $db_pass = ''; // Password
 $db_name = 'tours2connect'; // Database Name
 
@@ -50,7 +54,7 @@ if (!$query) {
     <!-- Custom styles for this template -->
     <link href="css/agency.min.css" rel="stylesheet">
 
-<style type="text/css">
+ <style type="text/css">
 
      
       /* Always set the map height explicitly to define the size of the div
@@ -66,21 +70,12 @@ if (!$query) {
       }
    
     
-        body {
-    padding-top: 90px;
-    background-color:#212F3D;
-}
+     
 
-
-
-
-
-
-
-<!-- table CSS -->
+/* table CSS */
     
     
-    	<style type="text/css">
+  
 		body {
 			font-size: 15px;
 			color: #343d44;
@@ -132,7 +127,7 @@ if (!$query) {
 
 		/* Table Body */
 		.data-table tbody td {
-			color: #353535;
+			color: #33ff33;
 		}
 		.data-table tbody td:first-child,
 		.data-table tbody td:nth-child(4),
@@ -203,13 +198,7 @@ idleLogout();
               <a class="nav-link js-scroll-trigger" href="index.php">Services</a>
             </li>
             
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="../classes/register.php">Register</a>
-            </li>
             
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="../classes/register.php">Login</a>
-            </li>
             
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="index.php">About</a>
@@ -220,14 +209,35 @@ idleLogout();
             </li>
             
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+              <a class="nav-link js-scroll-trigger" href="tours.php">Up&Coming Tours</a>
             </li>
+            
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="createTour.php">Create Tour</a>
+            </li>
+            
+            
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="index.php">Contact</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="niceprofilepage.php">Profile</a>
+            </li>
+			
+			
+			 <li class="nav-item">
+			<a href="settings.php">
+				<i class="fa fa-cog fa-lg"></i>
+			</a>
+			</li>
+            
             
               <!--This is for when the user logs in, name will display - Will give option to log out. Not working just yet -->
             <li class="nav-item">
-              <p style="color:#33ff33"> <?php echo $_SESSION['username'];?></p>
-              <a href="../index.php">Log Out <?php unset($_SESSION['username']);?></a>
-            </li>
+              <p style="color:#33ff33">welcome <?php echo $_SESSION['username'];?></p>
+              <a href="logout.php"> Logout </a>
+            </li> 
             
             
            
@@ -236,25 +246,300 @@ idleLogout();
       </div>
     </nav>
     
-    <!-- THIS IS THE GOOGLE API-->
-                       <div id="map"></div>
-    <script>
-      var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 53.33833198, lng:-6.285498858},
-          zoom: 6
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKzbCUOaHVZQPu4kvEWSdnmsM9je3ywUs&callback=initMap"
-    async defer></script>
-               
     
+    
+   
+               
+               
+               
+               <!-- TESTING TESTING TESTING GOOGLE MAPS API TESTING TESTING TESTING -->
+         
+   
+
+
+   
+  </head>
+
+  <body>
+    <div id="map"></div>
+
+    <script>
+     
+     var customLabel = {
+        Sport: {
+          label: 'Sp'
+        },
+        History: {
+          label: 'H'
+        },
+        Adventure: {
+          label: 'A'
+        },
+        Fun: {
+          label: 'F'
+        },
+        Scenic: {
+           label: 'Sc'
+        }
+      };
+
+        function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 53.33833198, lng:-6.285498858},
+          zoom: 11
+        });
+        var infoWindow = new google.maps.InfoWindow;
+
+// 	function downloadUrl(url,callback) {
+// 			 var request = window.ActiveXObject ?
+// 			   new ActiveXObject('Microsoft.XMLHTTP') :
+// 	    		 new XMLHttpRequest;
+	
+// 		 request.onreadystatechange = function() {
+// 			   if (request.readyState == 4) {
+// 			    request.onreadystatechange = doNothing;
+// 					   callback(request, request.status);
+// 				  }
+// 				 };
+	
+// 				 request.open('GET', url, true);
+// 			 request.send(null);
+// 			}
+
+
+
+          // Change this depending on the name of your PHP or XML file
+          downloadUrl('/googleapixml.php', function(data) {
+            var xml = data.responseXML;
+            var tour = xml.documentElement.getElementsByTagName('marker');
+            Array.prototype.forEach.call(tour, function(markerElem) {
+              var id = markerElem.getAttribute('id');
+              var first_name = markerElem.getAttribute('first_name');
+              var last_name = markerElem.getAttribute('last_name');
+              var category = markerElem.getAttribute('category');
+              var tour_name = markerElem.getAttribute('tour_name');
+              var region = markerElem.getAttribute('region');
+              var price = markerElem.getAttribute('price');
+              var meetingpoint = markerElem.getAttribute('meetingpoint');
+              var date = markerElem.getAttribute('date');
+              
+              
+              var point = new google.maps.LatLng(
+                  parseFloat(markerElem.getAttribute('lat')),
+                  parseFloat(markerElem.getAttribute('lng')));
+
+              var infowincontent = document.createElement('div');
+              var strong = document.createElement('strong');
+              strong.textContent = tour_name
+              infowincontent.appendChild(strong);
+              infowincontent.appendChild(document.createElement('br'));
+
+              var text = document.createElement('text');
+              text.textContent = meetingpoint
+              infowincontent.appendChild(text);
+              var icon = customLabel[category] || {};
+              var marker = new google.maps.Marker({
+                map: map,
+                position: point,
+                label: icon.label
+              });
+              
+              marker.addListener('click', function() {
+                infoWindow.setContent(infowincontent);
+                infoWindow.open(map, marker);
+              });
+            });
+          });
+        }
+
+
+
+      function downloadUrl(url, callback) {
+        var request = window.ActiveXObject ?
+            new ActiveXObject('Microsoft.XMLHTTP') :
+            new XMLHttpRequest;
+
+        request.onreadystatechange = function() {
+          if (request.readyState == 4) {
+            request.onreadystatechange = doNothing;
+            callback(request, request.status);
+          }
+        };
+
+        request.open('GET', url, true);
+        request.send(null);
+      }
+
+      function doNothing() {}
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKzbCUOaHVZQPu4kvEWSdnmsM9je3ywUs&callback=initMap">
+    </script>
+  
+               
+               
+               
+               
+                <!-- END END END OF TESTING TESTING TESTING GOOGLE MAPS API TESTING TESTING TESTING -->
+               
+               <!-- TESTING FILTER TESTING TESTING TESTING -->
+          <?php
+   
+$search_output = "";
+if(isset($_POST['searchquery']) && $_POST['searchquery'] != ""){
+	// run code if condition meets here
+}
+?>
+          <div class="filterOptions">
+			<form action="<?php echo $_SERVER['PHP_SELF']; ?>"  method="POST" >
+				<!-- option start -->
+				Search: <input name="searchquery" type="text" size="70" maxlength="88">
+  <input name="myBtn" type="submit">
+  <br><br>
+   Search In:
+  <select class="select width-12" name='filter1'>
+						<option>Choose Tour</option>
+						<option value='Sport'>Sport</option>
+						<option value='History'>History</option>
+						<option value='Architecture'>Architecture</option>
+                        <option value='Adventure'>Adventure</option>
+                        <option value='Scenic'>Scenic</option>
+					</select>
+</form>
+<div>
+<?php echo $search_output; ?>
+</div>
+				<div>
+					<label>Tour</label>
+					<select id="category" class="select width-12" name='searchquery'>
+						<option>Choose Tour</option>
+						<option value='Sport'>Sport</option>
+						<option value='History'>History</option>
+						<option value='Architecture'>Architecture</option>
+                        <option value='Adventure'>Adventure</option>
+                        <option value='Scenic'>Scenic</option>
+					</select>
+				</div>	
+          <div class="linedividor"></div>
+				<!-- ./option end -->
+				<!-- option start -->
+				<div>
+					<label>Region</label>
+					<select id="region" class="select width-12" name='category'>
+						<option>Choose Region</option>
+						<option value='LEI'>Leinster</option>
+						<option value='MUN'>Munster</option>
+						<option value='ULS'>Ulster</option>
+						<option value='CON'>Connacht</option>
+					</select>
+				</div>		
+				<!-- option divider -->
+				<div class="linedividor"></div>
+				<!-- ./option end -->
+				<!-- apply button -->
+				<input type='submit' name="myBtn">
+               <div class="dataFillUp">		
+							
+						</div>
+			</form>
+          <!-- END END END OF FILTER TESTING --> 
+               
+               
+               <!--FILTER CODE-->
+
+              <script src="http://code.jquery.com/jquery-latest.js"></script> 
+<script>
+	$(document).ready(function(){
+		var tour = "<?php echo $tour; ?>";
+		if (tour != ""){		
+			$('#tour').val(tour).prop('selected', true);
+		}
+		filter();
+	});
+</script>	
+
+
+<!-- filters section -->
+<column class="bothColumns" cols="2">
+	<div class="filtersList">
+		<!-- filters header -->
+		<div class="filtersListHeader">
+			<row centered>
+				Filters
+			</row>
+		</div><!-- filters listheader end-->
+		<div class="filterOptions">
+			<form method="post" id="filters">
+				<!-- option start -->
+				
+				<div>
+					<label>Tour</label>
+					<select id="category" class="select width-12" name='category'>
+						<option>Choose Tour</option>
+						<option value='Sport'>Sport</option>
+						<option value='History'>History</option>
+						<option value='Architecture'>Architecture</option>
+                        <option value='Adventure'>Adventure</option>
+                        <option value='Scenic'>Scenic</option>
+					</select>
+				</div>	
+				<!-- option divider -->
+				
+				
+				<div class="linedividor"></div>
+				<!-- ./option end -->
+				<!-- option start -->
+				<div>
+					<label>Region</label>
+					<select id="region" class="select width-12" name='region'>
+						<option>Choose Region</option>
+						<option value='LEI'>Leinster</option>
+						<option value='MUN'>Munster</option>
+						<option value='ULS'>Ulster</option>
+						<option value='CON'>Connacht</option>
+					</select>
+				</div>		
+				<!-- option divider -->
+				<div class="linedividor"></div>
+				<!-- ./option end -->
+				<!-- apply button -->
+				<input type='button' onclick='filter();' id='apply' value='Apply' class="applyButton width-12">
+               <div class="dataFillUp">		
+							
+						</div>
+			</form>
+		</div><!-- ./filter options end -->
+	</div><!-- ./filters list end-->
+</column> <!-- ./ filters end -->
+
+<script>
+	var jsonData;
+	function filter(){		
+		var category = document.forms['filters'].elements['category'].value;
+		var region = document.forms['filters'].elements['region'].value;
+		filterResults(category, region);
+	}
+
+	function filterResults(category, region){
+		$.ajax({
+			type: "POST",
+			url: "tours/applyfilter.php",
+			dataType : 'json',
+			cache: false,
+			data: {Category: category, Region: region},
+			success: function(records){
+				jsonData = records;
+				changePage(1);			
+			},
+			error: function(jqXHR, textStatus, errorThrown) {
+			
+			}
+		});
+	}
+	
+</script>	
+ 
+              <!--#############TOURS DISPLAYED HERE ############# -->
 		<row centered>
 			
 		 <div id="page-wrapper">
@@ -267,39 +552,53 @@ idleLogout();
             
     <!-- enter table from the db -->
     
-    	<h1 style="color:#33ff33">Keep Track Of up and coming events!</h1>
+    	<h1 style="color:#33ff33">Keep Track of up and coming events!</h1>
 	<table class="data-table">
 		
 		<thead>
 			<tr>
-				<th>first_name</th>
-				<th>last_name</th>
-				<th>category</th>
-				<th>tour_name</th>
-				<th>region</th>
-				<th>price</th>
-				
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>Category</th>
+				<th>Tour Name</th>
+				<th>Meeting Point</th>
+				<th>Region</th>
+				<th>Price €</th>
+				<th>Date</th>
+				<th> Learn More</th>
 				
 			</tr>
 		</thead>
 		<tbody>
+		  
+		  
+	
+		  
 		<?php
 
 		while ($row = mysqli_fetch_array($query))
 		{
-
+   
 			echo '<tr>
-					<td>'.$row['first_name'].'</td>
+		
+					<td>'.$row['first_name'].'</td></button>
 					<td>'.$row['last_name'].'</td>
 					<td>'.$row['category'].'</td>
 				    <td>'.$row['tour_name'].'</td>
+				     <td>'.$row['meetingpoint'].'</td>
 				    <td>'.$row['region'].'</td>
 				    <td>'.$row['price'].'</td>
-				    
+				     <td>'.$row['date'].'</td>
+				    <td> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"> <a href=tourinfo.php?'.$row[id].'> Learn More</a></td>
+
 
 				</tr>';
-
 		}?>
+	
+</div>
+	
+		
+		
 		</tbody>
 		<tfoot>
 
@@ -310,19 +609,10 @@ idleLogout();
 							
 						</div>
 						</div>	
-					<div class="bottomNavigator">
-						<row centered>			
-							<ul class="pagination" centered>
-								<li centered><a href="javascript:firstPage()" id="firstPage" href="#">|&larr;</a></li>
-								<li centered><a href="javascript:prevPage()" id="prevPage" href="#">&larr;</a></li>
-								<li centered><span id="currentPage"></span> of <span id="totalPages"></span></li>
-								<li centered><a href="javascript:nextPage()" id="nextPage" href="#">&rarr;</a></li>
-								<li centered><a href="javascript:lastPage()" id="lastPage" href="#">&rarr;|</a></li>
-							</ul>
-						</row>
-					</div>	
+				
 				</div>	
 				<!--Desktop Version End -->
+				</br>
 				
 				<!--Mobile Version Start -->
 				<div class="sm-hidden-up blockCoverage">
@@ -347,6 +637,46 @@ idleLogout();
 		</row><!-- ./row end -->
 	</div>	<!-- ./ container end -->
 </section><!-- content end -->
+
+ <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5 style="color:#33ff33"> <span class="copyright">Copyright &copy; Tours2Connect 2018</span> </h5>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline quicklinks">
+              <li class="list-inline-item">
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">Terms of Use</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
 
 
  <!-- Bootstrap core JavaScript -->

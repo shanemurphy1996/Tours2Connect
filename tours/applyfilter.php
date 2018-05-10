@@ -1,15 +1,15 @@
 <?php 
-	include '/connections.php';
+	include '/config.php';
 	$db_connection = db_connect();
 
-	$sql = "SELECT id, category, tour_name, price, 
-					region, tour_members, tour_max, tour_start
+	$sql = "SELECT id, first_name, category, tour_name, price, 
+					region
 			FROM tour WHERE TRUE";
 
 			
 	//append filters to text if needed
-	if(isset($_POST['tour']) && $_POST['tour'] != "Choose Tour"){
-		$sql .= " AND category = '".$_POST['tour']."'";
+	if(isset($_POST['category']) && $_POST['category'] != "Choose Category"){
+		$sql .= " AND category = '".$_POST['category']."'";
 	}
 	if(isset($_POST['region']) && $_POST['region'] != "Choose Region"){
 		$sql .= " AND region = '".$_POST['region']."'";
