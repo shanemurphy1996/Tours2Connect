@@ -931,3 +931,27 @@
 [09-May-2018 13:32:48 UTC] PHP Fatal error:  Class 'User' not found in /home/ubuntu/workspace/profile/profile.php on line 132
 [09-May-2018 13:32:48 UTC] PHP Stack trace:
 [09-May-2018 13:32:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/profile/profile.php:0
+[13-May-2018 17:56:10 UTC] PHP Warning:  move_uploaded_file(uploads/TourServices.PNG): failed to open stream: No such file or directory in /home/ubuntu/workspace/uploads/upload.php on line 38
+[13-May-2018 17:56:10 UTC] PHP Stack trace:
+[13-May-2018 17:56:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/uploads/upload.php:0
+[13-May-2018 17:56:10 UTC] PHP   2. move_uploaded_file() /home/ubuntu/workspace/uploads/upload.php:38
+[13-May-2018 17:56:10 UTC] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/php8zAQk1' to 'uploads/TourServices.PNG' in /home/ubuntu/workspace/uploads/upload.php on line 38
+[13-May-2018 17:56:10 UTC] PHP Stack trace:
+[13-May-2018 17:56:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/uploads/upload.php:0
+[13-May-2018 17:56:10 UTC] PHP   2. move_uploaded_file() /home/ubuntu/workspace/uploads/upload.php:38
+[13-May-2018 17:56:56 UTC] PHP Warning:  move_uploaded_file(uploads/TourServices.PNG): failed to open stream: No such file or directory in /home/ubuntu/workspace/uploads/upload.php on line 38
+[13-May-2018 17:56:56 UTC] PHP Stack trace:
+[13-May-2018 17:56:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/uploads/upload.php:0
+[13-May-2018 17:56:56 UTC] PHP   2. move_uploaded_file() /home/ubuntu/workspace/uploads/upload.php:38
+[13-May-2018 17:56:56 UTC] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpzTwUa2' to 'uploads/TourServices.PNG' in /home/ubuntu/workspace/uploads/upload.php on line 38
+[13-May-2018 17:56:56 UTC] PHP Stack trace:
+[13-May-2018 17:56:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/uploads/upload.php:0
+[13-May-2018 17:56:56 UTC] PHP   2. move_uploaded_file() /home/ubuntu/workspace/uploads/upload.php:38
+[13-May-2018 17:57:48 UTC] PHP Warning:  move_uploaded_file(uploads/TourServices.PNG): failed to open stream: No such file or directory in /home/ubuntu/workspace/uploads/upload.php on line 38
+[13-May-2018 17:57:48 UTC] PHP Stack trace:
+[13-May-2018 17:57:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/uploads/upload.php:0
+[13-May-2018 17:57:48 UTC] PHP   2. move_uploaded_file() /home/ubuntu/workspace/uploads/upload.php:38
+[13-May-2018 17:57:48 UTC] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpfHOGAk' to 'uploads/TourServices.PNG' in /home/ubuntu/workspace/uploads/upload.php on line 38
+[13-May-2018 17:57:48 UTC] PHP Stack trace:
+[13-May-2018 17:57:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/uploads/upload.php:0
+[13-May-2018 17:57:48 UTC] PHP   2. move_uploaded_file() /home/ubuntu/workspace/uploads/upload.php:38

@@ -294,7 +294,7 @@ body {
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="index.php" float:right>Services</a>
+              <a class="nav-link js-scroll-trigger" href="index.php">Services</a>
             </li>
             
             <li class="nav-item">
@@ -399,8 +399,7 @@ body {
 					else if(in_array("Emails don't match<br>", $error_array)) echo "Emails don't match<br>"; ?>
 
 
-					<input type="password" name="reg_password" placeholder="Password" required>
-					<br>
+					<input type="password" name="reg_password" placeholder="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"  <br>
 					<input type="password" name="reg_password2" placeholder="Confirm Password" required>
 					<br>
 					<?php if(in_array("Your passwords do not match<br>", $error_array)) echo "Your passwords do not match<br>"; 

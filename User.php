@@ -15,13 +15,19 @@ class User {
 
 
 
-	public function getFirstAndLastName() {
+	public function getFirstName() {
 		$username = $this->user['username'];
 		$query = mysqli_query($this->con, "SELECT first_name, last_name FROM user WHERE username='$username'");
 		$row = mysqli_fetch_array($query);
 		return $row['first_name'] . " " . $row['last_name'];
 	}
 
+public function getLastName() {
+		$username = $this->user['username'];
+		$query = mysqli_query($this->con, "SELECT first_name, last_name FROM user WHERE username='$username'");
+		$row = mysqli_fetch_array($query);
+		return  $row['last_name'];
+	}
 	
 	
 	

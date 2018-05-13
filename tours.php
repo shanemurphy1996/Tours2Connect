@@ -226,11 +226,6 @@ idleLogout();
             </li>
 			
 			
-			 <li class="nav-item">
-			<a href="settings.php">
-				<i class="fa fa-cog fa-lg"></i>
-			</a>
-			</li>
             
             
               <!--This is for when the user logs in, name will display - Will give option to log out. Not working just yet -->
@@ -373,7 +368,7 @@ idleLogout();
       function doNothing() {}
     </script>
     <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKzbCUOaHVZQPu4kvEWSdnmsM9je3ywUs&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkVaIVyx-HZ5wk-g32aJ0ZYCH7i10RZVQ&callback=initMap">
     </script>
   
                
@@ -381,163 +376,16 @@ idleLogout();
                
                
                 <!-- END END END OF TESTING TESTING TESTING GOOGLE MAPS API TESTING TESTING TESTING -->
-               
-               <!-- TESTING FILTER TESTING TESTING TESTING -->
-          <?php
-   
-$search_output = "";
-if(isset($_POST['searchquery']) && $_POST['searchquery'] != ""){
-	// run code if condition meets here
-}
-?>
-          <div class="filterOptions">
-			<form action="<?php echo $_SERVER['PHP_SELF']; ?>"  method="POST" >
-				<!-- option start -->
-				Search: <input name="searchquery" type="text" size="70" maxlength="88">
-  <input name="myBtn" type="submit">
-  <br><br>
-   Search In:
-  <select class="select width-12" name='filter1'>
-						<option>Choose Tour</option>
-						<option value='Sport'>Sport</option>
-						<option value='History'>History</option>
-						<option value='Architecture'>Architecture</option>
-                        <option value='Adventure'>Adventure</option>
-                        <option value='Scenic'>Scenic</option>
-					</select>
-</form>
-<div>
-<?php echo $search_output; ?>
-</div>
-				<div>
-					<label>Tour</label>
-					<select id="category" class="select width-12" name='searchquery'>
-						<option>Choose Tour</option>
-						<option value='Sport'>Sport</option>
-						<option value='History'>History</option>
-						<option value='Architecture'>Architecture</option>
-                        <option value='Adventure'>Adventure</option>
-                        <option value='Scenic'>Scenic</option>
-					</select>
-				</div>	
-          <div class="linedividor"></div>
-				<!-- ./option end -->
-				<!-- option start -->
-				<div>
-					<label>Region</label>
-					<select id="region" class="select width-12" name='category'>
-						<option>Choose Region</option>
-						<option value='LEI'>Leinster</option>
-						<option value='MUN'>Munster</option>
-						<option value='ULS'>Ulster</option>
-						<option value='CON'>Connacht</option>
-					</select>
-				</div>		
-				<!-- option divider -->
-				<div class="linedividor"></div>
-				<!-- ./option end -->
-				<!-- apply button -->
-				<input type='submit' name="myBtn">
-               <div class="dataFillUp">		
-							
-						</div>
-			</form>
+           
           <!-- END END END OF FILTER TESTING --> 
                
                
                <!--FILTER CODE-->
 
               <script src="http://code.jquery.com/jquery-latest.js"></script> 
-<script>
-	$(document).ready(function(){
-		var tour = "<?php echo $tour; ?>";
-		if (tour != ""){		
-			$('#tour').val(tour).prop('selected', true);
-		}
-		filter();
-	});
-</script>	
 
 
-<!-- filters section -->
-<column class="bothColumns" cols="2">
-	<div class="filtersList">
-		<!-- filters header -->
-		<div class="filtersListHeader">
-			<row centered>
-				Filters
-			</row>
-		</div><!-- filters listheader end-->
-		<div class="filterOptions">
-			<form method="post" id="filters">
-				<!-- option start -->
-				
-				<div>
-					<label>Tour</label>
-					<select id="category" class="select width-12" name='category'>
-						<option>Choose Tour</option>
-						<option value='Sport'>Sport</option>
-						<option value='History'>History</option>
-						<option value='Architecture'>Architecture</option>
-                        <option value='Adventure'>Adventure</option>
-                        <option value='Scenic'>Scenic</option>
-					</select>
-				</div>	
-				<!-- option divider -->
-				
-				
-				<div class="linedividor"></div>
-				<!-- ./option end -->
-				<!-- option start -->
-				<div>
-					<label>Region</label>
-					<select id="region" class="select width-12" name='region'>
-						<option>Choose Region</option>
-						<option value='LEI'>Leinster</option>
-						<option value='MUN'>Munster</option>
-						<option value='ULS'>Ulster</option>
-						<option value='CON'>Connacht</option>
-					</select>
-				</div>		
-				<!-- option divider -->
-				<div class="linedividor"></div>
-				<!-- ./option end -->
-				<!-- apply button -->
-				<input type='button' onclick='filter();' id='apply' value='Apply' class="applyButton width-12">
-               <div class="dataFillUp">		
-							
-						</div>
-			</form>
-		</div><!-- ./filter options end -->
-	</div><!-- ./filters list end-->
-</column> <!-- ./ filters end -->
 
-<script>
-	var jsonData;
-	function filter(){		
-		var category = document.forms['filters'].elements['category'].value;
-		var region = document.forms['filters'].elements['region'].value;
-		filterResults(category, region);
-	}
-
-	function filterResults(category, region){
-		$.ajax({
-			type: "POST",
-			url: "tours/applyfilter.php",
-			dataType : 'json',
-			cache: false,
-			data: {Category: category, Region: region},
-			success: function(records){
-				jsonData = records;
-				changePage(1);			
-			},
-			error: function(jqXHR, textStatus, errorThrown) {
-			
-			}
-		});
-	}
-	
-</script>	
  
               <!--#############TOURS DISPLAYED HERE ############# -->
 		<row centered>
@@ -614,29 +462,8 @@ if(isset($_POST['searchquery']) && $_POST['searchquery'] != ""){
 				<!--Desktop Version End -->
 				</br>
 				
-				<!--Mobile Version Start -->
-				<div class="sm-hidden-up blockCoverage">
-					<div class="mobileDataFillUp">
-						
-					</div>
-					<div class="bottomNavigatorM">	
-						<div class="myPagination">							
-								<a href="javascript:firstPage()" id="firstPageM" > <div class="colorChange mobilePagination">|&larr;</div></a>
-								<a href="javascript:prevPage()" id="prevPageM"><div class="colorChange mobilePagination">&larr;</div></a>
-								<div class="mobilePagination1" id="currentPageM"></div>
-								<div class="mobilePagination1">of</div>
-								<div class="mobilePagination1" id="totalPagesM"></div>
-								<a href="javascript:nextPage()" id="nextPageM"><div class="colorChange mobilePagination" centered>&rarr;</div></a>
-								<a href="javascript:lastPage()" id="lastPageM"><div class="colorChange mobilePagination" centered>&rarr;|</div></a>
-						</div>
-					</div>	
-				</div>
-				<!--Mobile Version End -->
-				
-			</column> <!-- ./tour list end -->
-		</row><!-- ./row end -->
-	</div>	<!-- ./ container end -->
-</section><!-- content end -->
+
+			
 
  <!-- Footer -->
     <footer>
@@ -645,25 +472,7 @@ if(isset($_POST['searchquery']) && $_POST['searchquery'] != ""){
           <div class="col-md-4">
             <h5 style="color:#33ff33"> <span class="copyright">Copyright &copy; Tours2Connect 2018</span> </h5>
           </div>
-          <div class="col-md-4">
-            <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-twitter"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-facebook"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-linkedin"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
+          
           <div class="col-md-4">
             <ul class="list-inline quicklinks">
               <li class="list-inline-item">

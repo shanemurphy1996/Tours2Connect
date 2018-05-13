@@ -217,18 +217,16 @@ if (!$query) {
             
             
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+              <a class="nav-link js-scroll-trigger" href="index.php">Contact</a>
             </li>
             
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="niceprofilepage.php">Profile</a>
+            </li>
             
 			
 			
-			 <li class="nav-item">
-			<a href="settings.php">
-				<i class="fa fa-cog fa-lg"></i>
-			</a>
-			</li>
-            
+			 
             
               <!--This is for when the user logs in, name will display - Will give option to log out. Not working just yet -->
             <li class="nav-item">
@@ -271,7 +269,8 @@ if (!$query) {
                                                 }
                                                 ?>
           <div class="intro-heading text-uppercase"><h3>See tour details below!</h3></div>
-        
+        </header>
+        <body>
         
       </div>
       <!-- Services -->
@@ -292,7 +291,7 @@ if (!$query) {
 			</tr>
 		</thead>
                  <?php
-                                            $sql = "SELECT first_name, last_name, tour_name, category, meetingpoint, price, date, attendance FROM tour WHERE id ='$myquery'";
+                                            $sql = "SELECT first_name, last_name, email, tour_name, category, meetingpoint, price, date, attendance FROM tour WHERE id ='$myquery'";
                                             // echo $myquery;
                                            
                                             $result = $conn->query($sql);
@@ -329,13 +328,12 @@ if (!$query) {
                    <td>'.$row["price"].'</td>
                   </tr>
                   
-                  <tr>
-                  <th> 
-                  Attendance:
-                  </th>
-                  <td>'.$row["attendance"].'</td>
-                  </tr>
+                  <th>Contact Information</th>
+                   <td> '.$row["email"].'</td>
+                   </tr>
                   
+                  
+                 
                   
                   
                </tr>';
@@ -368,15 +366,13 @@ if (!$query) {
                
                
                
-                 
+                 <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+
 <div id="paypal-button-container"></div>
-<script src="https://www.paypalobjects.com/api/checkout.js"></script>
+
 <script>
 
     // Render the PayPal button
-
-    var CREATE_PAYMENT_URL  = 'https://my-store.com/paypal/create-payment';
-    var EXECUTE_PAYMENT_URL = 'https://my-store.com/paypal/execute-payment';
 
     paypal.Button.render({
 
@@ -401,81 +397,26 @@ if (!$query) {
             production: '<insert production client id>'
         },
 
-        payment: function() {
-            return paypal.request.post(CREATE_PAYMENT_URL).then(function(data) {
-                return data.id;
+        payment: function(data, actions) {
+            return actions.payment.create({
+                payment: {
+                    transactions: [
+                        {
+                            amount: { total: '20', currency: 'EUR' }
+                        }
+                    ]
+                }
             });
         },
 
-
-        onAuthorize: function(data) {
-            return paypal.request.post(EXECUTE_PAYMENT_URL, {
-                paymentID: data.paymentID,
-                payerID:   data.payerID
-            }).then(function() {
-
-                // The payment is complete!
-                // You can now show a confirmation message to the customer
+        onAuthorize: function(data, actions) {
+            return actions.payment.execute().then(function() {
+                window.alert('Payment Complete!');
             });
         }
 
-    }, '#paypal-button');
+    }, '#paypal-button-container');
 
-
-curl -v https://api.sandbox.paypal.com/v1/payments/payment \\
-  -H 'Content-Type: application/json' \\
-  -H 'Authorization: Bearer Access-Token' \\
-  -d '{
-  "intent": "sale",
-  "experience_profile_id":"id",
-  "redirect_urls":
-  {
-    "return_url": "https://example.com",
-    "cancel_url": "https://example.com"
-  },
-  "payer":
-  {
-    "payment_method": "paypal"
-  },
-  "transactions": [
-  {
-    "amount":
-    {
-      "total": "4.00",
-      "currency": "USD",
-      "details":
-      {
-        "subtotal": "2.00",
-        "shipping": "1.00",
-        "tax": "2.00",
-        "shipping_discount": "-1.00"
-      }
-    },
-    "item_list":
-    {
-      "items": [
-      {
-        "quantity": "1",
-        "name": "item 1",
-        "price": "1",
-        "currency": "USD",
-        "description": "item 1 description",
-        "tax": "1"
-      },
-      {
-        "quantity": "1",
-        "name": "item 2",
-        "price": "1",
-        "currency": "USD",
-        "description": "item 2 description",
-        "tax": "1"
-      }]
-    },
-    "description": "The payment transaction description.",
-    "invoice_number": "merchant invoice",
-    "custom": "merchant custom data"
-  }]
-}'
 </script>
                
    </table>
@@ -485,38 +426,26 @@ curl -v https://api.sandbox.paypal.com/v1/payments/payment \\
     margin: auto;
     width: 60%;
     border: 3px solid #73AD21;
-    padding: 10px;
+    
 }
    </style>
-                   
-                   
-                   
-                   
-                   <form action="" method="post">
-<input type="submit" name="click_button" value="Click..">
-</form>
-<?php
-session_start();
-
-if (isset($_POST['click_button'])) {
-    $_SESSION['clicks'] += 1 ;
-} else {
-    $_SESSION['clicks'] = 0;
-}
-
-echo($_SESSION['clicks']);
-           ?>
-    </header>
-
-
-
+               
+  
+               
+               
+               
+               
+               
+               
+               <!-- TEST -->
+               
           
-                
-                
-                
-                
+               <!-- END TEST --> 
+                   
+                   
+        </body>    
    
-    
+</section>
      <!-- Footer -->
     <footer>
       <div class="container">
@@ -525,23 +454,7 @@ echo($_SESSION['clicks']);
             <h5 style="color:#33ff33"> <span class="copyright">Copyright &copy; Tours2Connect 2018</span> </h5>
           </div>
           <div class="col-md-4">
-            <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-twitter"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-facebook"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-linkedin"></i>
-                </a>
-              </li>
-            </ul>
+           
           </div>
           <div class="col-md-4">
             <ul class="list-inline quicklinks">
@@ -572,7 +485,7 @@ echo($_SESSION['clicks']);
     <!-- Custom scripts for this template -->
     <script src="js/agency.min.js"></script>
 
-  </body>
+  
 
 </html>
     <!-- Header -->

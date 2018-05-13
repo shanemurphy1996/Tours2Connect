@@ -1,8 +1,19 @@
 <?php
 
 include("auth.php");
-?>
 
+?>
+<?php
+require 'config.php';
+if (isset($_SESSION['username'])) {
+	$userLoggedIn = $_SESSION['username'];
+	$user_details_query = mysqli_query($con, "SELECT * FROM user WHERE username='$userLoggedIn'");
+	$user = mysqli_fetch_array($user_details_query);
+}
+else {
+	header("Location: register.php");
+}
+?>
 <?php 
 	session_start();
 		
@@ -223,6 +234,9 @@ idleLogout();
 		$last_name = stripslashes($_REQUEST['last_name']);//stripslashes removes back slashes
 		$last_name = mysqli_real_escape_string($con,$last_name);
 		
+		$email = stripslashes($_REQUEST['email']);//stripslashes removes back slashes
+		$email = mysqli_real_escape_string($con,$email);
+		
 		$category = stripslashes($_REQUEST['category']);
 		$category = mysqli_real_escape_string($con,$category);
 		
@@ -247,11 +261,19 @@ idleLogout();
 		$lng = stripslashes($_REQUEST['lng']);
 		$lng = mysqli_real_escape_string($con,$lng);
 		
+		
+	
+	
+	
+	
+	
+	
 
 	    //md5 function which will transform the code into encrypted data
         $query = "INSERT into `tour` ( 	
 first_name,
 last_name,
+email,
 category,
 tour_name,
 region,
@@ -259,7 +281,7 @@ price,
 meetingpoint,
 date,
 lat,
-lng) VALUES ('$first_name', '$last_name', '$category','$tour_name', '$region', '$price', '$meetingpoint', '$date', '$lat', '$lng')";
+lng) VALUES ('$first_name', '$last_name', '$email', '$category','$tour_name', '$region', '$price', '$meetingpoint', '$date', '$lat', '$lng')";
         $result = mysqli_query($con,$query);
         if($result){
             echo "<div class='container'>
@@ -313,14 +335,12 @@ lng) VALUES ('$first_name', '$last_name', '$category','$tour_name', '$region', '
               <a class="nav-link js-scroll-trigger" href="index.php">Contact</a>
             </li>
             
-             
+             <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="niceprofilepage.php">Profile</a>
+            </li>
+            
 			
 			
-			 <li class="nav-item">
-			<a href="settings.php">
-				<i class="fa fa-cog fa-lg"></i>
-			</a>
-			</li>
             
             
               <!--This is for when the user logs in, name will display - Will give option to log out. Not working just yet -->
@@ -378,7 +398,7 @@ lng) VALUES ('$first_name', '$last_name', '$category','$tour_name', '$region', '
         *
        </span>
       </label>
-      <input class="form-control" id="first_name" name="first_name" type="text" value="<?php echo $_SESSION['first_name'];?>" placeholder="Please Enter your First Name"  required/>
+      <input class="form-control" id="first_name" name="first_name" type="text" value="<?php echo $user ['first_name']; ?>" placeholder="Please Enter your First Name" pattern="[^'\x22]+" title="Cant contain ' Or special characters"  required/>
      </div>
      
      
@@ -389,7 +409,7 @@ lng) VALUES ('$first_name', '$last_name', '$category','$tour_name', '$region', '
         *
        </span>
       </label>
-      <input class="form-control" id="last_name" name="last_name" placeholder="Please Enter your surname" type="text" required/>
+      <input class="form-control" id="last_name" name="last_name" value="<?php echo $user ['last_name']; ?>" placeholder="Please Enter your surname"  type="text" pattern="[^'\x22]+" title="Cant contain ' Or special characters" required/>
       <span class="help-block" id="hint_last_name">
        Enter your Surname
       </span>
@@ -403,7 +423,7 @@ lng) VALUES ('$first_name', '$last_name', '$category','$tour_name', '$region', '
         *
        </span>
       </label>
-      <input class="form-control" id="email" name="email" placeholder="Enter a valid email address" type="email" required/>
+      <input class="form-control" id="email" name="email" value="<?php echo $user ['email']; ?>" placeholder="Enter a valid email address" type="email" pattern="[^'\x22]+" title="Cant contain ' Or special characters" required/>
      </div>
      
      
@@ -414,7 +434,7 @@ lng) VALUES ('$first_name', '$last_name', '$category','$tour_name', '$region', '
         *
        </span>
       </label>
-      <input class="form-control" id="tour_name" name="tour_name" type="text"/>
+      <input class="form-control" id="tour_name" name="tour_name" type="text" pattern="[^'\x22]+" title="Cant contain ' Or special characters" required/>
      </div>
      
      
@@ -426,19 +446,19 @@ lng) VALUES ('$first_name', '$last_name', '$category','$tour_name', '$region', '
         *
        </span>
       </label>
-      <input class="form-control" id="price" name="price" type="number"/>
+      <input class="form-control" id="price" name="price" type="number" pattern="[^'\x22]+" title="Cant contain ' Or special characters" required />
      </div>
      
      
      
      <div class="form-group ">
-      <label class="control-label requiredField" for="meetingpoint">
+      <label class="control-label requiredField" for="meetingpoint" required>
        Meeting Point
        <span class="asteriskField">
         *
        </span>
       </label>
-      <input class="form-control" id="meetingpoint" name="meetingpoint" type="text" required/>
+      <input class="form-control" id="meetingpoint" name="meetingpoint" type="text" pattern="[^'\x22]+" title="Cant contain ' Or special characters" required/>
       <span class="help-block" id="hint_meetingpoint">
        Select the spot in which you want to begin your Tour.
       </span>
@@ -452,7 +472,7 @@ lng) VALUES ('$first_name', '$last_name', '$category','$tour_name', '$region', '
         *
        </span>
       </label>
-      <input class="form-control" id="lat" name="lat" type="text" required/>
+      <input class="form-control" id="lat" name="lat" type="text" pattern="[^'\x22]+" title="Cant contain ' Or special characters" required/>
       <span class="help-block" id="hint_lat">
        This will display your tour on the map on the tours area.
        Need help with finding your events latitude?
@@ -469,7 +489,7 @@ lng) VALUES ('$first_name', '$last_name', '$category','$tour_name', '$region', '
         *
        </span>
       </label>
-      <input class="form-control" id="lng" name="lng" type="text" required/>
+      <input class="form-control" id="lng" name="lng" type="text" pattern="[^'\x22]+" title="Cant contain ' Or special characters" required/>
       <span class="help-block" id="hint_lng">
        This will display your tour on the map on the tours area.
        Need help with finding your events longitude?
